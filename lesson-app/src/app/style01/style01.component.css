@@ -1,0 +1,15 @@
+:host{
+    border: 1px solid black;
+    padding: 20px;
+    display: block;
+    margin-top: 50px;
+}
+
+:host-context(.theme-green) h2{
+    color:green;
+}
+
+p{
+    font-style: italic;
+}
+

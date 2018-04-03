@@ -1,0 +1,8 @@
+<input type="checkbox" [(ngModel)]='settings.qaccent'> Accent<br/>
+<input type="checkbox" [(ngModel)]='settings.error'> Error<br/>
+<input type="checkbox" [(ngModel)]='settings.highlighted'> Highlighted<br/>
+
+<div [ngClass]="settings">Hello #1</div>
+<div [ngClass]="['qaccent','error']">Hello #1</div>
+<hr/>
+

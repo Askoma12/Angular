@@ -19,6 +19,9 @@ import { DirectivesComponent } from './lesson3/directives/directives.component';
 import { DataListComponent } from './less4/sample2/data-list.component';
 import { SimpleServiceModule } from './less4/sample2/simple-service.module';
 
+import { MyTryComponent } from './less4/my-try/my-try.component';
+import {MyTryModule} from './less4/my-try/my-try.module';
+
 
 
 
@@ -27,6 +30,7 @@ import { SimpleServiceModule } from './less4/sample2/simple-service.module';
         BrowserModule,
         FormsModule,
         SimpleServiceModule,
+        MyTryModule,
         RouterModule.forRoot(
             [
                 {path: 'style', component: Style01Component},
@@ -36,9 +40,9 @@ import { SimpleServiceModule } from './less4/sample2/simple-service.module';
                 {path: 'projection', component: Projection05Component},
                 {path: 'directives', component: DirectivesComponent},
                 {path: 'dependensi', component: DataListComponent},
+                {path: 'try', component: MyTryComponent},
                 {path: '', redirectTo: 'style', pathMatch: 'full'},
             ],
-
         )],
 
     declarations: [AppComponent, Style01Component, ChapterComponent, Input02Component, CounterComponent,
